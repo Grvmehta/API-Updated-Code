@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 69, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 173.36 sec <<< FAILURE! - in TestSuite
+UC_FD_14_TC_1_getdnrs(com.hms.APITestingUsingUnirest.SmokeTest)  Time elapsed: 0.452 sec  <<< FAILURE!
+java.lang.AssertionError: expected [success] but found [User has been logged out.]
+	at com.hms.APITestingUsingUnirest.SmokeTest.UC_FD_14_TC_1_getdnrs(SmokeTest.java:101)
+
+UC_FD_15_TC_1_gethousestatus(com.hms.APITestingUsingUnirest.SmokeTest)  Time elapsed: 0.457 sec  <<< FAILURE!
+org.json.JSONException: JSONObject["days"] not found.
+	at com.hms.APITestingUsingUnirest.SmokeTest.UC_FD_15_TC_1_gethousestatus(SmokeTest.java:110)
+
+UC_FD_25_TC_1_getinvoice(com.hms.APITestingUsingUnirest.SmokeTest)  Time elapsed: 2.142 sec  <<< FAILURE!
+org.json.JSONException: JSONArray[0] not found.
+	at com.hms.APITestingUsingUnirest.SmokeTest.UC_FD_25_TC_1_getinvoice(SmokeTest.java:227)
+
+UC_FD_30_TC_1_getgroupcancellationcharge(com.hms.APITestingUsingUnirest.SmokeTest)  Time elapsed: 2.75 sec  <<< FAILURE!
+org.json.JSONException: JSONArray[-2] not found.
+	at com.hms.APITestingUsingUnirest.SmokeTest.UC_FD_30_TC_1_getgroupcancellationcharge(SmokeTest.java:254)
+
+UC_FD_37_TC_1_movebooking(com.hms.APITestingUsingUnirest.SmokeTest)  Time elapsed: 3.909 sec  <<< FAILURE!
+java.lang.AssertionError: expected [success] but found [move not possible,roomId missing in same roomType]
+	at com.hms.APITestingUsingUnirest.SmokeTest.UC_FD_37_TC_1_movebooking(SmokeTest.java:294)
+
+UC_FD_52_TC_1_editdnrs(com.hms.APITestingUsingUnirest.SmokeTest)  Time elapsed: 0.673 sec  <<< FAILURE!
+org.json.JSONException: JSONArray[0] not found.
+	at com.hms.APITestingUsingUnirest.SmokeTest.UC_FD_52_TC_1_editdnrs(SmokeTest.java:331)
+
+UC_FD_54_TC_1_addoccupancies(com.hms.APITestingUsingUnirest.SmokeTest)  Time elapsed: 19.192 sec  <<< FAILURE!
+java.lang.AssertionError: expected [success] but found [Not possible to change no of guest]
+	at com.hms.APITestingUsingUnirest.SmokeTest.UC_FD_54_TC_1_addoccupancies(SmokeTest.java:351)
+

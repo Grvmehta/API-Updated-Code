@@ -1,0 +1,31 @@
+/target/
+test-output/API Automation test run/Smoke Test.html
+test-output/API Automation test run/Smoke Test.xml
+test-output/API Automation test run/testng-failed.xml
+test-output/emailable-report.html
+test-output/index.html
+test-output/junitreports/TEST-com.hms.APITestingUsingUnirest.SmokeTest.xml
+test-output/old/API Automation test run/classes.html
+test-output/old/API Automation test run/groups.html
+test-output/old/API Automation test run/methods-alphabetical.html
+test-output/old/API Automation test run/methods-not-run.html
+test-output/old/API Automation test run/methods.html
+test-output/old/API Automation test run/testng.xml.html
+test-output/old/API Automation test run/toc.html
+test-output/testng-failed.xml
+test-output/testng-results.xml
+        both modified:   testng.xml
+
+*.prefs
+*.html
+*.properties
+*.properties
+*.html
+*.xml
+*.prefs
+*.html
+*.html
+*.html
+*.html
+*.html
+*.html
