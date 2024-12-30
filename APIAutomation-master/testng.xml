@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Automation test run">
+
+
+<listeners>
+         <listener class-name="com.hms.APITestingUsingUnirest.Ireporter" />
+         
+    </listeners> 
+   <test name="Smoke Test">
+      <groups>
+         <define name="admin">
+            <include name="adminview" />
+            <include name="admincreate" />
+         </define>
+         <define name="frontdesk">
+            <include name="frontdeskview" />
+            <include name="frontdeskcreate" />
+         </define>
+         <define name="web">
+            <include name="webview" />
+            <include name="webcreate" />
+         </define>
+         <define name="tst">
+            <include name="tst1" />
+         </define>
+         <run>
+            <include name="admin" />
+            <include name="frontdesk" />
+            <include name="web" />
+            <exclude name="tst" />
+         </run>
+      </groups>
+      <classes>
+         <class name="com.hms.APITestingUsingUnirest.SmokeTest">
+            <methods>
+                    
+               <exclude name="UC_FD_NEW_cancelandcommitbooking" />
+                    
+               <exclude name="UC_FD_NEW_TC_CancelandCommitGroup" />
+                    
+               <exclude name="UC_FD_59_TC_1_earlycheckout" />
+                    
+               <exclude name="UC_FD_59_TC_earlycheckoutgroup" />
+                    
+            </methods>
+         </class>
+          
+      </classes>
+   </test>
+</suite>
